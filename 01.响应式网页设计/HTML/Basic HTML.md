@@ -90,3 +90,73 @@ Google 字体是一套免费的开源自定义字体，你可以在任何项目�
 ```
 
 favicon 是 favorite icon（收藏夹图标）的缩写，通常是在浏览器标签（页）中显示在网站标题旁边的小图标。许多网站会使用 favicon 来显示他们的品牌图标。
+
+### HTML模板
+ HTML 模板——就像一个现成的网页模板。 Think of it as the foundation of a house. 模板包括每个 HTML 文档所需的基本结构和重要元素。 节省时间，并有助于确保页面设置正确。 这是一个示例：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+       name="viewport"
+       content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+模板的关键部分。 首先，是 `DOCTYPE` 声明：
+
+```html
+<!DOCTYPE html>
+```
+
+它会告诉浏览器你使用的 HTML 版本。 接下来，是 `html` 标签：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <!--All other elements go inside here-->
+</html>
+```
+
+它包裹着你所有的内容，并且可以指定页面的语言。在 `html` 标签内，你会发现两个主要部分，`head` 和 `body`：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Important metadata goes here-->
+  </head>
+  <body>
+    <!--Headings, paragraphs, images, etc. go inside here-->
+  </body>
+</html>
+```
+
+`head` 部分包含重要的幕后信息：
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document Title Goes Here</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+```
+
+你网站的元数据，包含在 `meta` 元素中，其中包含字符编码等详细信息，以及 Twitter 等网站应如何预览你的页面链接。 你网站的标题，可在 `title` 元素中找到，它决定了显示在浏览器标签页或窗口中的文本。 最后，你通常会在 `head` 部分使用 `link` 元素链接页面的外部样式表。
+
+`body` 部分——放置所有内容的地方：
+
+```html
+<body>
+  <h1>I am a main title</h1>
+  <p>Example paragraph text</p>
+</body>
+```
