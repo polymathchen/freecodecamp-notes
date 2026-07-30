@@ -160,3 +160,27 @@ favicon 是 favorite icon（收藏夹图标）的缩写，通常是在浏览器�
   <p>Example paragraph text</p>
 </body>
 ```
+
+
+### UTF-8 字符编码
+UTF-8 —— UCS 转换格式 8，是一种在网络上广泛使用的标准化字符编码。字符编码是计算机用来将字符作为数据保存的方法。本质上，网页上的所有文本都是作为一个或多个字节保存的字符序列。在计算机中，字节是由 8 位（二进制位）组成的数据单位。UTF-8 支持 Unicode 字符集中的每个字符，这包括所有书写系统、语言和技术符号中的字符和符号。下面是使用带有 `charset` 属性的 `meta` 元素将字符编码设置为 `UTF-8` 的示例：
+
+```html
+<meta charset="UTF-8" />
+```
+
+通过将字符编码设置为 UTF-8，可确保页面上正确显示重音 `"e"` 字符（`é`）。 下面是使用 UTF-8 字符编码的扩展代码示例：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examples of the UTF-8 encoding</title>
+  </head>
+  <body>
+    <p>Café</p>
+  </body>
+</html>
+```
