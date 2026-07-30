@@ -13,6 +13,16 @@ HTML——代表超文本标记语言，是一种用于创建网页的标记语�
 ```
 
 
+注释能让你在不影响浏览器显示的情况下留下信息。 它也能让你的代码失效。 A comment in HTML starts with `<!--`, contains any number of lines of text, and ends with `-->`.
+
+这是一个包含文本 `TODO: Remove h1` 的评论示例：
+
+示例代码
+
+```html
+<!-- TODO: Remove h1 -->
+```
+
 
 ## 属性
 
