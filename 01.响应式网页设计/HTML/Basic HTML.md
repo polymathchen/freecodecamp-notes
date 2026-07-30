@@ -3,8 +3,13 @@ HTML——代表超文本标记语言，是一种用于创建网页的标记语�
 开始标签和结束标签都以左尖括号（`<`）开头，以右尖括号（`>`）结尾，标签名称位于这两个尖括号之间
 结束标签的左尖括号后紧跟着一个正斜杠（`/`）。 有些 HTML 元素没有结束标签。 这些被称为空元素。
 
+
+
 ```HTML
 <h1> main heading element </h1>
+
+<img> # 空元素
+
 ```
 
 
@@ -36,3 +41,52 @@ HTML——代表超文本标记语言，是一种用于创建网页的标记语�
 其他常见的属性有 `src` 和 `alt`，或称备选属性，分别用于指定图像的来源和为图像提供备选描述性文本。
 
 在 HTML 中常见的布尔属性，例如 `disabled`、`readonly` 和 `required`。 这些属性用于指定元素的状态，如禁用、只读或必填
+
+## 公式化
+
+### Link 元素在HTML中的作用
+`link` 元素用于链接样式表和网站图标等外部资源。 以下是为外部 CSS 文件使用 `link` 元素的基本语法：
+
+```html
+<link rel="stylesheet" href="./styles.css" />
+```
+
+`rel` 属性用于指定链接资源与 HTML 文档之间的关系。 在这种情况下，我们需要指定该链接资源为 `stylesheet`。
+
+将 HTML 和 CSS 分置于不同的文件中被视为最佳实践。 开发人员将使用 `link` 元素来链接外部 CSS 文件，而不是在 HTML 文档中编写所有内容。
+
+`href` 属性用于指定外部资源 URL 的位置。
+
+示例中的 `.` 后跟一个斜线告诉计算机在当前文件夹或目录中查找 `styles.css` 文件。
+
+`link` 元素应放在 `head` 元素内，如下例所示：
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examples of the link element</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+```
+
+在专业代码库中，你经常会看到多个 `link` 元素，它们链接到不同的样式表、字体和图标。下面是一个使用 `link` 元素链接到名为 _Playwrite Cuba_ 的外部 Google 字体的示例：
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+  rel="stylesheet"
+/>
+```
+
+Google 字体是一套免费的开源自定义字体，你可以在任何项目中使用。 你可以选择要使用的字体，Google 会为你提供必要的 HTML 和 CSS 代码。 在这个示例中，`rel` 属性的 `preconnect` 值告诉浏览器，要与 `href` 属性中指定的值提前建立连接。 这样做是为了加快这些外部资源的加载时间。
+
+`link` 元素的另一个常见用例是链接到图标。 下面是一个链接到 favicon 的示例：
+
+```html
+<link rel="icon" href="favicon.ico" />
+```
+
+favicon 是 favorite icon（收藏夹图标）的缩写，通常是在浏览器标签（页）中显示在网站标题旁边的小图标。许多网站会使用 favicon 来显示他们的品牌图标。
