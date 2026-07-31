@@ -32,6 +32,51 @@ SEO，即搜索引擎优化，是一种优化网页使其在搜索引擎中更�
  通过 HTML `head` 部分中的一组 `meta` 元素来设置这些属性。
  第一个重要的 OG 属性是 `title`
 
+示例代码
+
+```html
+<meta content="freeCodeCamp.org" property="og:title" />
+```
+
+将 `property` 属性指定为 `og:title`。 `content` 属性是你将为社交媒体网站编写要显示的标题的地方。
+
+下一个重要的 OG 属性是 `type`。 这是一个为 freeCodeCamp 主页使用 OG `type` 的例子：
+
+示例代码
+
+```html
+<meta property="og:type" content="website" />
+```
+
+`type` 属性用于表示在社交媒体上共享的内容类型。 内容类型包括文章、网站、视频或音乐。
+
+第三个重要的 OG 属性是 `image`。 这是一个为 freeCodeCamp 主页设置 OG `image` 的例子：
+
+示例代码
+
+```html
+<meta
+  content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+  property="og:image"
+/>
+```
+
+在这个示例中，开放图谱图像指向 freeCodeCamp 徽标。 所有这些图像都应该是具有良好的尺寸和比例的高质量图像。 大多数社交媒体平台都会包含关于图像要求的标准，以帮助你确保你的内容在他们的网站上显示良好。 例如，developers.facebook.com 文档页面指出：
+
+“在高分辨率设备上使用至少 1200 * 630 像素的图像以获得最佳显示效果。 至少，你应该使用 600 * 315 像素的图像来显示带有较大图像的链接页面帖子。”
+
+第四个重要的 OG 属性是 `url`。 这是一个为 freeCodeCamp 主页设置 OG `url` 的例子：
+
+示例代码
+
+```html
+<meta property="og:url" content="https://www.freecodecamp.org" />
+```
+
+你还可以设置更多的 OG 属性，如 `description`、`audio`、`video` 和 `locale`。 然而，开放图谱 `url`、`image`、`type` 和 `title` 是最重要的几个。
+
+那么这些开放图属性如何影响搜索引擎优化呢？当你的内容在社交媒体上被分享时，精心设计的 OG 属性可以提升内容在用户动态中的展示效果。这可能带来更高的点击率，从而向搜索引擎传递你的内容具有相关性和吸引力的信号。
+
 ## 属性
 
 属性是用于调整 HTML 元素行为的特殊值。
